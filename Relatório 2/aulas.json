@@ -1,0 +1,62 @@
+[
+    {
+        "assunto": "Banco de Dados II",
+        "professor": {
+            "nome": "Renzo Mesquita"
+        },
+        "alunos": [
+            {
+                "nome": "João da Silva"
+            },
+            {
+                "nome": "Pedro Rabello"
+            },
+            {
+                "nome": "Robersvaldo Victor"
+            },
+            {
+                "nome": "Joabe Pereira"
+            }
+        ]
+    },
+    {
+        "assunto": "Paradigmas da Programação",
+        "professor": {
+            "nome": "Marcelo Cysneiros"
+        },
+        "alunos": [
+            {
+                "nome": "Julio Costa"
+            },
+            {
+                "nome": "Maria Bethania"
+            },
+            {
+                "nome": "Renato Russo"
+            },
+            {
+                "nome": "Yago Carlos"
+            }
+        ]
+    },
+    {
+        "assunto": "Probabilidade",
+        "professor": {
+            "nome": "Renan Duque"
+        },
+        "alunos": [
+            {
+                "nome": "Isaías de Oliveira"
+            },
+            {
+                "nome": "Catarina Azevedo"
+            },
+            {
+                "nome": "João Lucas Silva"
+            },
+            {
+                "nome": "Lucinda Amélia Paiva"
+            }
+        ]
+    }
+]
