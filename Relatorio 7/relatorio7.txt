@@ -1,0 +1,21 @@
+Agregações
+    MATCH(n:MoneyTransfer) RETURN AVG(n.amount) as Media;
+    MATCH(n:MoneyTransfer) RETURN MIN(n.amount) as MenorValor;
+    MATCH(n:MoneyTransfer) RETURN MAX(n.amount) as MaiorValor;
+    MATCH(n:MoneyTransfer) RETURN SUM(n.amount) as TotalTransferido;
+    MATCH(n:MoneyTransfer) RETURN COUNT(*) as TotalTransferencias;
+ 
+Funções matemáticas
+    MATCH(n:MoneyTransfer) RETURN ROUND(AVG(n.amount), 2, 'HALF_UP') as Media;
+    MATCH(n:MoneyTransfer) RETURN ROUND(SUM(n.amount), 2, 'UP') as TotalTransferido;
+    MATCH(n:MoneyTransfer) RETURN FLOOR(MIN(n.amount)) as MenorValor;
+    MATCH(n:MoneyTransfer) RETURN CEIL(MAX(n.amount)) as MaiorValor;
+    MATCH (n:Purchase) RETURN ABS(MIN(n.amount)-MAX(n.amount)) as Diferenca;
+ 
+ 
+Funções de String
+    MATCH (n:AccountHolder) RETURN TOUPPER(n.fullName) as NomeMaiusculo;
+    MATCH (n:AccountHolder) RETURN LEFT(n.firstName, 3) as PrimeirasLetras;
+    MATCH (n:PhoneNumber) RETURN TOSTRING(n.phone) as NumeroString;
+    MATCH (n:DeliveryAddress) RETURN REVERSE(n.state) as EstadoInvertido;
+    MATCH (n:Address) RETURN SPLIT(n.streetAddress, ' ') as EnderecoSeparado;
